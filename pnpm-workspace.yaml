@@ -1,8 +1,10 @@
 packages:
-  - 'packages/*'
+  - packages/*
 
-onlyBuiltDependencies:
-  - unrs-resolver
+ignoredBuiltDependencies:
+  - core-js
+  - core-js-pure
+
 # Prevents installation of packages newer than 7 days
 # to mitigate supply chain risks
 # - https://pnpm.io/settings#minimumreleaseage
@@ -11,6 +13,12 @@ minimumReleaseAgeExclude:
   - '@upleveled/*'
   - eslint-config-upleveled
   - stylelint-config-upleveled
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - sharp
+  - unrs-resolver
+
 # Fail on pnpm ignored build scripts
 # - https://pnpm.io/settings#strictdepbuilds
 strictDepBuilds: true
