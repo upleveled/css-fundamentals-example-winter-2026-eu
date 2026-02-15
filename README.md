@@ -5,7 +5,7 @@ CSS properties and selectors, layouts, variables and ways to use them in React (
 ## Sandboxes
 
 - [No styles](https://codesandbox.io/p/sandbox/github/upleveled/css-fundamentals-example-winter-2026-eu/tree/main/packages/01-no-styles)
-- Global CSS: https://codesandbox.io/p/sandbox/upleveled-starter-global-css-nvf9c8?file=%2Fsrc%2FApp.js
+- [Global CSS](https://codesandbox.io/p/sandbox/github/upleveled/css-fundamentals-example-winter-2026-eu/tree/main/packages/02-global-css)
 - CSS Modules, SASS, CSS variables: https://codesandbox.io/p/sandbox/upleveled-css-modules-scss-css-variables-q6mq83?file=%2Fsrc%2FApp.js
 - Emotion: https://codesandbox.io/p/sandbox/upleveled-css-in-js-xkn9mv?file=%2Fsrc%2FApp.js
 - Tailwind CSS: https://codesandbox.io/p/devbox/hrzvlj?file=%2Fsrc%2FApp.js%3A23%2C47

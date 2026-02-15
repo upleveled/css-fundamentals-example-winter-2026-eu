@@ -1,0 +1,104 @@
+/* html elements type selectors */
+body {
+  background-color: lightblue;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  background-color: white;
+  border-radius: 32px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/*class selectors */
+.profilepicture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.status {
+  padding: 8px 16px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: aquamarine;
+  border-radius: 12px;
+}
+
+/* element with various classes */
+.status.alive {
+  background-color: greenyellow;
+  color: darkslategray;
+}
+
+.status.dead {
+  background-color: red;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* pseudo class */
+.name:hover {
+  color: #507dbc;
+  text-decoration: underline;
+  font-size: 2rem;
+  transition: all 400ms ease-in-out;
+}
+
+.species {
+  text-transform: uppercase;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+
+/* combinator: nested elements - direct child */
+.location > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+/* nested elements with classes */
+.location .locationTitle {
+  font-weight: bold;
+}
+
+.location span {
+  text-align: center;
+}
+
+/* media queries */
+@media screen and (max-width: 400px) {
+  section {
+    width: 100vh;
+    height: 100vh;
+    border-radius: 0;
+    background-color: lightpink;
+  }
+
+  .location {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
